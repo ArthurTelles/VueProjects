@@ -51,11 +51,7 @@ export default {
       this.selectedAnswer = index;
     },
     submit() {
-      let isCorrect = false;
       this.answered = true;
-      if (this.selectedAnswer === 3) {
-        isCorrect = true;
-      }
     },
     unsubmit() {
       this.answered = false;
@@ -64,7 +60,7 @@ export default {
   },
   computed: {
     answers() {
-      this.answered = false;
+      answered = false;
       let answers = [...this.currentQuestion.incorrect_answers];
       answers.push(this.currentQuestion.correct_answer);
       return answers;
