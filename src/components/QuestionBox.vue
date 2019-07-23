@@ -26,7 +26,7 @@
       </b-button>
 
       <b-button 
-      @click="next();unsubmit()"
+      @click="next();disableSubmit()"
       variant="success">
         Next
       </b-button>
@@ -53,14 +53,14 @@ export default {
     submit() {
       this.answered = true;
     },
-    unsubmit() {
+    disableSubmit() {
       this.answered = false;
       this.selectedAnswer = null;
     }
   },
   computed: {
     answers() {
-      answered = false;
+      this.answered = false;
       let answers = [...this.currentQuestion.incorrect_answers];
       answers.push(this.currentQuestion.correct_answer);
       return answers;
