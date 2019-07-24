@@ -17,7 +17,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/pets',
+      path: '/pets/:species/:id',
       name: 'pets',
       component: Pets
     },
