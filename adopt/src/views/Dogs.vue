@@ -1,7 +1,6 @@
 <template>
 
   <div>
-
     <h1>Dogs for adoption</h1>
 
     <b-table striped hover :items="dogs">
@@ -11,20 +10,19 @@
         </router-link>
       </template>
     </b-table>
-
   </div>
 
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from "vuex"
 
 export default {
   data() {
-    return {};
+    return {}
   },
   computed: {
-    ...mapState(["dogs"])
+    ...mapState(['dogs'])
   }
-};
+}
 </script>

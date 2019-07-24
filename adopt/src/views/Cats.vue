@@ -1,7 +1,6 @@
 <template>
-  
-  <div>
 
+  <div>
     <h1>Cats for adoption</h1>
 
     <b-table striped hover :items="cats">
@@ -11,7 +10,6 @@
         </router-link>
       </template>
     </b-table>
-
   </div>
 
 </template>
@@ -24,9 +22,7 @@ export default {
     return {}
   },
   computed: {
-    ...mapState([
-      'cats'
-    ])
+    ...mapState(['cats'])
   }
-};
+}
 </script>
