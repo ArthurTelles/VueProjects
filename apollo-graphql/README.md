@@ -1,4 +1,4 @@
-# apollo-graphql
+# apollo-graphql-test
 
 ## Project setup
 ```
